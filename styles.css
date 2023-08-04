@@ -1,0 +1,168 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* === VARIABLES  === */
+:root{
+  --very-dark-magneta: hsl(300, 43%, 22%);
+  --dark-g-magneta: hsl(303, 10%, 53%);
+  --light-g-magneta: hsl(300, 24%, 96%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* === RESETS  === */
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-family: 'League Spartan', sans-serif;
+    }
+    p, h1, h2, h3 {
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  /* === FONT COLORS  === */
+  /* Weights: 400, 500, 700 */
+    p{
+      color: var(--white);
+      font-weight: 400;
+      line-height: 1.4;
+      font-size: 1.2rem;
+    }
+    .title{
+      color: var(--very-dark-magneta);
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .info{
+      color: var(--dark-g-magneta);
+    }
+    .rate-text{
+      color: var(--very-dark-magneta);
+      font-weight: 500;
+    }
+    .name{
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    .buyer{
+      color: var(--soft-pink);
+    }
+  /* === BASE STYLES  === */
+
+  .main-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+    
+  }
+
+
+
+.title-container{
+  text-align: center;
+  padding: 4em 1em 1em;
+}
+.large{
+  font-size: 1.3em;
+}
+
+
+
+.rates-container{
+ 
+}
+.rates{
+  padding: 1em;
+  background-color: var(--light-g-magneta);
+  border-radius: .5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1em;
+}
+.star-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+
+
+.reviews-container{
+  
+}
+.review{
+
+  padding: 2em;
+  background-color: var(--very-dark-magneta);
+  border-radius: .5em;
+  
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: repeat(2, fr);
+  gap: 2em;
+}
+.review-text{
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+.review > img{
+  border-radius: 50%;
+}
+
+
+footer{
+  margin: 2em auto;
+  padding: 2em;
+}
+
+  /* === MEDIA QUERIES  === */
+
+@media (min-width: 1200px){
+  .main-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    
+    
+  }
+  .titles-container{
+    grid-row: 1 / 6;
+    grid-column: 1 / 6;
+  }
+  .rates-container{
+    grid-row: 1 / 6;
+    grid-column: 6 / 13;
+
+  }
+  .reviews-container{
+    grid-row: 6 / 13;
+    grid-column: 1 / 13;
+
+    display: flex;
+  }
+ 
+}
