@@ -27,6 +27,10 @@ body{
   padding: 0;
   font-size: 15px;
   font-family: 'League Spartan', sans-serif;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+  url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 p, h1, h2, h3 {
   margin: 0;
@@ -163,6 +167,13 @@ footer{
 
       /* ABOVE 750px  */
 @media (min-width: 750px){
+  body{
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+  
   .main-grid{
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
